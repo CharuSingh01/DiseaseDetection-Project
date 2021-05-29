@@ -7,6 +7,37 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <h1>Stroke Prediction</h1>
+    <p>According to the World Health Organization (WHO) stroke is the 2nd leading cause of death globally, responsible for approximately 11% of total deaths.<br>
+    This dataset is used to predict whether a patient is likely to get stroke based on the input parameters like gender, age, various diseases, and smoking status. Each row in the data provides relavant information about the patient.</p>
+    <form>
+        Gender:<input type="radio" name="gender">Male
+        <input type="radio" name="gender">Female
+        <input type="radio" name="gender">Other<br>
+        Age:<input type="number" name="age"><br>
+        Do you have hypertension:<input type="radio" name="hypertension">Yes
+        <input type="radio" name="hypertension">No<br>
+        Do you have any heart disease:<input type="radio" name="heart_disease">Yes
+        <input type="radio" name="heart_disease">No<br>
+        Have you ever been married:<input type="radio" name="ever_married">Yes
+        <input type="radio" name="ever_married">No<br>
+        Work Type:<select name="work_type">
+            <option value="None" selected disabled>---Select---</option>
+            <option value="Children">Children</option>
+            <option value="Private">Private</option>
+            <option value="Govt_Job">Government Job</option>
+            <option value="Self_Employed">Self Employed</option>
+            <option value="Never_Worked">Never Worked</option>
+        </select><br>
+        Residence Type: <input type="radio" name=work_type>Urban
+        <input type="radio" name=work_type>Rural<br>
+        Average Glucose Level in Blood:<input type="number" name="avg_glucose"><br>
+        Body Mass index:<input type="number" name="bmi"><br>
+        Smoking Status:<input type="radio" name="smoking_status">Formerly smoked
+        <input type="radio" name="smoking_status">Never smoked
+        <input type="radio" name="smoking_status">Smokes
+        <input type="radio" name="smoking_status">Uknown<br>
+        <input type="submit"><input type="reset">
+    </form>
 </body>
 </html>
